@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08578F7A1B68BC282E43FEF7 /* Pods_TaskApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DB2B77B1B4308051FA859B /* Pods_TaskApp.framework */; };
+		1E2EF316248E4E9500F49486 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2EF315248E4E9500F49486 /* TaskList.swift */; };
+		1E3F368A249015CF00501CE6 /* TaskView1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3F3689249015CF00501CE6 /* TaskView1Cell.swift */; };
+		1E3F368C2490163800501CE6 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3F368B2490163800501CE6 /* TasksViewController.swift */; };
+		1E661729248E450D00F20888 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E661728248E450D00F20888 /* Task.swift */; };
 		1E6752522481233300AC5FBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6752512481233300AC5FBD /* AppDelegate.swift */; };
 		1E6752542481233300AC5FBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6752532481233300AC5FBD /* SceneDelegate.swift */; };
 		1E6752562481233300AC5FBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6752552481233300AC5FBD /* ViewController.swift */; };
@@ -14,9 +19,16 @@
 		1E67525C2481233300AC5FBD /* TaskApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E67525A2481233300AC5FBD /* TaskApp.xcdatamodeld */; };
 		1E67525E2481233600AC5FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E67525D2481233600AC5FBD /* Assets.xcassets */; };
 		1E6752612481233600AC5FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E67525F2481233600AC5FBD /* LaunchScreen.storyboard */; };
+		1E67526B24852D3400AC5FBD /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E67526A24852D3400AC5FBD /* NewTaskViewController.swift */; };
+		1E67526F2485903700AC5FBD /* TaskListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E67526E2485903700AC5FBD /* TaskListViewCell.swift */; };
+		1EA433CB248E5A6C00183314 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA433CA248E5A6C00183314 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E2EF315248E4E9500F49486 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		1E3F3689249015CF00501CE6 /* TaskView1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView1Cell.swift; sourceTree = "<group>"; };
+		1E3F368B2490163800501CE6 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		1E661728248E450D00F20888 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		1E67524E2481233300AC5FBD /* TaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6752512481233300AC5FBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E6752532481233300AC5FBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +38,12 @@
 		1E67525D2481233600AC5FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E6752602481233600AC5FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E6752622481233600AC5FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E67526A24852D3400AC5FBD /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		1E67526E2485903700AC5FBD /* TaskListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewCell.swift; sourceTree = "<group>"; };
+		1EA433CA248E5A6C00183314 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		AAADB0BECAA7E7152F5766D9 /* Pods-TaskApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskApp.debug.xcconfig"; path = "Target Support Files/Pods-TaskApp/Pods-TaskApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B2DB2B77B1B4308051FA859B /* Pods_TaskApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF88387942487528D09D4E67 /* Pods-TaskApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskApp.release.xcconfig"; path = "Target Support Files/Pods-TaskApp/Pods-TaskApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08578F7A1B68BC282E43FEF7 /* Pods_TaskApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +63,8 @@
 			children = (
 				1E6752502481233300AC5FBD /* TaskApp */,
 				1E67524F2481233300AC5FBD /* Products */,
+				660063939F3B662D9D5B1455 /* Pods */,
+				2C9930DA6CE994DD703ECD52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +82,13 @@
 				1E6752512481233300AC5FBD /* AppDelegate.swift */,
 				1E6752532481233300AC5FBD /* SceneDelegate.swift */,
 				1E6752552481233300AC5FBD /* ViewController.swift */,
+				1EA433CA248E5A6C00183314 /* StorageManager.swift */,
+				1E661728248E450D00F20888 /* Task.swift */,
+				1E67526A24852D3400AC5FBD /* NewTaskViewController.swift */,
+				1E3F368B2490163800501CE6 /* TasksViewController.swift */,
+				1E2EF315248E4E9500F49486 /* TaskList.swift */,
+				1E67526E2485903700AC5FBD /* TaskListViewCell.swift */,
+				1E3F3689249015CF00501CE6 /* TaskView1Cell.swift */,
 				1E6752572481233300AC5FBD /* Main.storyboard */,
 				1E67525D2481233600AC5FBD /* Assets.xcassets */,
 				1E67525F2481233600AC5FBD /* LaunchScreen.storyboard */,
@@ -70,6 +98,23 @@
 			path = TaskApp;
 			sourceTree = "<group>";
 		};
+		2C9930DA6CE994DD703ECD52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB2B77B1B4308051FA859B /* Pods_TaskApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		660063939F3B662D9D5B1455 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAADB0BECAA7E7152F5766D9 /* Pods-TaskApp.debug.xcconfig */,
+				EF88387942487528D09D4E67 /* Pods-TaskApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E6752652481233600AC5FBD /* Build configuration list for PBXNativeTarget "TaskApp" */;
 			buildPhases = (
+				42B09B577D17162421E6089E /* [CP] Check Pods Manifest.lock */,
 				1E67524A2481233300AC5FBD /* Sources */,
 				1E67524B2481233300AC5FBD /* Frameworks */,
 				1E67524C2481233300AC5FBD /* Resources */,
+				D06F49B5F56B2941E3CF37B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +183,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42B09B577D17162421E6089E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D06F49B5F56B2941E3CF37B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskApp/Pods-TaskApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaskApp/Pods-TaskApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskApp/Pods-TaskApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1E67524A2481233300AC5FBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1E67525C2481233300AC5FBD /* TaskApp.xcdatamodeld in Sources */,
+				1E3F368A249015CF00501CE6 /* TaskView1Cell.swift in Sources */,
+				1E3F368C2490163800501CE6 /* TasksViewController.swift in Sources */,
+				1E67526F2485903700AC5FBD /* TaskListViewCell.swift in Sources */,
+				1E67526B24852D3400AC5FBD /* NewTaskViewController.swift in Sources */,
+				1EA433CB248E5A6C00183314 /* StorageManager.swift in Sources */,
 				1E6752562481233300AC5FBD /* ViewController.swift in Sources */,
 				1E6752522481233300AC5FBD /* AppDelegate.swift in Sources */,
+				1E661729248E450D00F20888 /* Task.swift in Sources */,
 				1E6752542481233300AC5FBD /* SceneDelegate.swift in Sources */,
+				1E2EF316248E4E9500F49486 /* TaskList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +382,7 @@
 		};
 		1E6752662481233600AC5FBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAADB0BECAA7E7152F5766D9 /* Pods-TaskApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +401,7 @@
 		};
 		1E6752672481233600AC5FBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF88387942487528D09D4E67 /* Pods-TaskApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
