@@ -9,8 +9,9 @@
 import UIKit
 
 class TaskViewCell: UITableViewCell {
+    
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var taskListLabel: UILabel!
-    
+
 }

@@ -13,19 +13,19 @@ class NewTaskViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var addTask: UIButton!
     @IBOutlet weak var newTaskView: UITextView!
+    @IBOutlet weak var taskListLabel: UILabel!
     
     var task: Task!
     var tasklist: TaskList!
     
-    @IBOutlet weak var taskList: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        newTaskView.text = task.content
+        newTaskView.text = task.note
+        taskListLabel.text = task.taskListName.name
         newTaskView.textColor = UIColor.gray
         newTaskView.returnKeyType = .done
         newTaskView.delegate = self
+        
         navigationItem.hidesBackButton = true
     }
     
@@ -36,14 +36,14 @@ class NewTaskViewController: UIViewController, UITextViewDelegate {
             print(taskContent)
         } else {
             let task = Task()
-            task.content = taskContent
+            task.note = taskContent
             StorageManager.save(task, in: tasklist)
         }
     }
     
     // MARK: - UITextViewDelegates
     func textViewDidBeginEditing(_ textView: UITextView) {
-        if newTaskView.text == task.content {
+        if newTaskView.text == task.note {
             newTaskView.textColor = UIColor.black
         }
     }

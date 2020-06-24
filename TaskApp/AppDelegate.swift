@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        Realm.Configuration.defaultConfiguration = Realm.Configuration(
+        schemaVersion: 3,
+        migrationBlock: { migration, oldSchemaVersion in
+            if (oldSchemaVersion < 3) {
+                migration.renameProperty(onType: Task.className(), from: "content", to: "note")
+            }
+        })
         return true
     }
 

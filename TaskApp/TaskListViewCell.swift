@@ -12,8 +12,5 @@ class TaskListViewCell: UITableViewCell {
 
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var numberOfTasks: UILabel!
-    
-    @IBAction func doneAction(_ sender: UIButton) {
-    }
-    
+
 }

@@ -40,7 +40,13 @@ class StorageManager {
     
     static func edit(task: Task, with newname: String) {
         try! realm.write{
-            task.content = newname
+            task.note = newname
+        }
+    }
+    
+    static func done(task: Task) {
+        try! realm.write {
+            task.isComplete = true
         }
     }
 }

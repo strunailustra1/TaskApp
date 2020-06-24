@@ -9,8 +9,9 @@
 import RealmSwift
 
 class Task: Object {
-    @objc dynamic var content = ""
+    @objc dynamic var note = ""
     @objc dynamic var created = Date()
     @objc dynamic var dueDate = Date()
     @objc dynamic var isComplete = false
+    @objc dynamic var taskListName: TaskList!
 }
